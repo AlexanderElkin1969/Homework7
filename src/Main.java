@@ -64,9 +64,21 @@ public class Main {
         }
     }
     public static void task7() {
+        int friday =2;
         System.out.println("Задача 7");
+        for (int i=1; i <= 31; i++){
+            if ((i-friday)%7 == 0){
+                System.out.println("Сегодня пятница, "+i+"-е число. Необходимо подготовить отчет");
+            }
+        }
     }
     public static void task8() {
+        int year =2023, period =79;
         System.out.println("Задача 8");
+        for (int i=0; i <= year+100; i= i+ period){
+            if ((year - i) < 200){
+                System.out.println("Комета приближалась/приблизится к Земле в "+i+" году");
+            }
+        }
     }
 }
