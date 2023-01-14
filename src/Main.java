@@ -38,13 +38,30 @@ public class Main {
         }
     }
     public static void task4() {
+        int total =15_000, i =1;
         System.out.println("Задача 4");
+        while (total <=12_000_000) {
+            total = total * 107/100;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+            i++;
+        }
     }
     public static void task5() {
+        int total =15_000, i =1;
         System.out.println("Задача 5");
+        while (total <=12_000_000) {
+            total = total * 107/100;
+            if (i%6 == 0) System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+            i++;
+        }
     }
     public static void task6() {
+        long total =15_000L;
         System.out.println("Задача 6");
+        for (int i=1; i <=108; i++) {
+            total = total * 107/100;
+            if (i%6 == 0) System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+        }
     }
     public static void task7() {
         System.out.println("Задача 7");
